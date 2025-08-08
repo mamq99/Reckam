@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
+  <style>
+    :root {
+      --blue: #3f3dff;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: var(--blue);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .footer {
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--white);
+      opacity: 0.7;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      animation: spin 4s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets\logoWhite.svg" alt="Logomark" class="logo"/>
+    <h1>Something Amazing Is Coming Soon</h1>
+    <p>We're working hard behind the scenes. <br>Stay tuned for the big reveal.</p>
+  </div>
+  <div class="footer">
+    &copy; 2025 Reckam.com — All Rights Reserved.
+  </div>
+</body>
+</html>
